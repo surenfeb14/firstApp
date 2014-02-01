@@ -14,6 +14,32 @@
 
 </script>
 <script src="js/jquery.mobile-1.3.2.min.js"></script>
+<style type = "text/css">
+     .home_logo
+	 {
+	text-align:center;
+	font-size:197px;
+	margin:0;padding:0;
+	font-family:monotype corsiva;
+	-webkit-animation:textAnim 1s infinite linear;
+	
+
+	 }
+	 
+	 
+	 @-webkit-keyframes textAnim
+	 {
+	   100%{text-shadow:0 0 8px #ffff00;}
+	   75%{text-shadow:0 0 6px #ffff00;}
+	   50%{text-shadow:0 0 4px #888;}
+	   0%{text-shadow:0 0 2px #888;}
+	   
+	 }
+	 img
+	 {
+	 padding:15px;
+	 }
+</style>
 
 </head>
 <body>
@@ -24,15 +50,16 @@
 		   </div>
 		   
 		   <div data-role = "content" data-theme = "d">
-		      <h1 style = "text-align:center;">This is the home demo screen</h1>
+		      <h1 class = "home_logo">sD</h1>
+			  <h5 style = "margin:0;padding:0;text-align:center;">Youtube videos</h5>
 		   </div>
 		   
 		   <div data-position = "fixed" data-role = "footer" data-id = "nav" data-theme = "d">
 		      <div data-role = "navbar">
 			     <ul>
 				    <li><a href = "#pagetwo" data-transition = "slide" data-icon = "arrow-r">Videos</a></li>
-				    <li><a href = "#browse" data-icon = "search">Browse</a></li>
-				    <li><a href = "#contact" data-icon = "info">contact</a></li>
+				    <li><a href = "#browse" data-transition = "slide" data-icon = "search">Browse</a></li>
+				    <li><a href = "#contact" data-transition = "slide" data-icon = "info">contact</a></li>
 				 </ul>
 			  </div>
 		 
@@ -45,7 +72,7 @@
 	 
 	       <div data-role = "header">
 		      <h1>video</h1>
-		      <a href = "#pageone" data-role = "button" data-icon = "home" class = "ui-btn-right">Home</a>
+		      <a href = "#pageone" data-role = "button" data-icon = "home" class = "ui-btn-right" data-transition = "slide">Home</a>
 		   </div>
 		   
 		   <div data-role = "content">
@@ -56,24 +83,25 @@
 			       <ul>
 				      <li> <a href = "#video">
 					       <img src = "https://i1.ytimg.com/vi_webp/fU_2jABxBKE/default.webp" alt = "">
-					       <h2>english 1</h2>
-						   <p> English tutorials</p>
+					       <h2>Tutorials for English learning</h2>
+						   <span class = "ui-li-count" style = "color:red;">New</span>
+						   <p> This is the E-tutorial for learning English</p>
 						   </a>
 					  </li>
 					  
 					   <li> 
 					       <a href = "#video">
-					       <img src = "https://i1.ytimg.com/vi_webp/fU_2jABxBKE/default.webp" alt = "">
-					       <h2>english 1</h2>
-						   <p> English tutorials</p>
+					       <img src = "https://i1.ytimg.com/vi/tU3lRm5W3oQ/mqdefault.jpg" alt = "">
+					       <h2>Learn English easy</h2>
+						   <p> beginners can learn English here easily</p>
 						   </a>
 					  </li>
 					  
 					   <li> 
 					       <a href = "#video">
-					       <img src = "https://i1.ytimg.com/vi_webp/fU_2jABxBKE/default.webp" alt = "">
-					       <h2>english 1</h2>
-						   <p> English tutorials</p>
+					       <img src = "https://i1.ytimg.com/vi/YMSrnc4qiXA/mqdefault.jpg" alt = "">
+					       <h2>Easy English in 30days</h2>
+						   <p> English can be learned at a moment</p>
 						   </a>
 					  </li>
 				   </ul>
@@ -83,37 +111,37 @@
 			   <li>News
 			        <ul data-role = "listview">
 			      <li><a href = "#video">
-				  <img src = "https://i1.ytimg.com/vi_webp/fU_2jABxBKE/default.webp"/>
-				  <h2>Rhymes1</h2>
-				  <p> ths is the video of rhymes </p>
+				  <img src = "https://i1.ytimg.com/vi/UiGzihK84XA/mqdefault.jpg"/>
+				  <h2>News in Zee channel</h2>
+				  <p>This is the popular news published in Zee news </p>
 				  </a>
 				  </li>
 				  
 				  <li><a href = "#video">
 				  <img src = "https://i1.ytimg.com/vi_webp/fU_2jABxBKE/default.webp"/>
-				  <h2>Rhymes1</h2>
-				  <p> ths is the video of rhymes </p>
+				  <h2>Popular in News</h2>
+				  <p> This is the popular news published in channels</p>
+				  </a>
+				  </li>
+				  
+				  <li><a href = "#video">
+				  <img src = "https://i1.ytimg.com/vi/odSkvaqWJOo/mqdefault.jpg"/>
+				  <h2>This is the news of foriegn</h2>
+				  <p> Foreign channel broadcasted the news </p>
 				  </a>
 				  </li>
 				  
 				  <li><a href = "#video">
 				  <img src = "https://i1.ytimg.com/vi_webp/fU_2jABxBKE/default.webp"/>
-				  <h2>Rhymes1</h2>
-				  <p> ths is the video of rhymes </p>
+				  <h2>News in Zee channel</h2>
+				  <p> This is the popular news published in Zee news  </p>
 				  </a>
 				  </li>
 				  
 				  <li><a href = "#video">
-				  <img src = "https://i1.ytimg.com/vi_webp/fU_2jABxBKE/default.webp"/>
-				  <h2>Rhymes1</h2>
-				  <p> ths is the video of rhymes </p>
-				  </a>
-				  </li>
-				  
-				  <li><a href = "#video">
-				  <img src = "https://i1.ytimg.com/vi_webp/fU_2jABxBKE/default.webp"/>
-				  <h2>Rhymes1</h2>
-				  <p> ths is the video of rhymes </p>
+				  <img src = "https://i1.ytimg.com/vi_webp/PKKNaY9NtcU/mqdefault.webp"/>
+				  <h2>Popular in News</h2>
+				  <p> This is the popular news published in channels </p>
 				  </a>
 				  </li>
 			  </ul>
@@ -122,37 +150,37 @@
 			   <li>Rhymes
 			        <ul data-role = "listview">
 			      <li><a href = "#video">
-				  <img src = "https://i1.ytimg.com/vi_webp/fU_2jABxBKE/default.webp"/>
-				  <h2>Rhymes1</h2>
-				  <p> ths is the video of rhymes </p>
+				  <img src = "https://i1.ytimg.com/vi_webp/md8y86xtmP4/mqdefault.webp"/>
+				  <h2>Nursery Rhymes Vol 2 - Collection of Twenty Rhymes</h2>
+				  <p> Children will enjoy hours of listening and watching favourite nursery rhymes come to life. After you listen to the rhymes, you can be ... </p>
 				  </a>
 				  </li>
 				  
 				  <li><a href = "#video">
-				  <img src = "https://i1.ytimg.com/vi_webp/fU_2jABxBKE/default.webp"/>
-				  <h2>Rhymes1</h2>
-				  <p> ths is the video of rhymes </p>
+				  <img src = "https://i1.ytimg.com/vi_webp/zBcK8XYEfTc/mqdefault.webp"/>
+				  <h2>Nursery Rhymes Vol 3 - Collection of Thirty Rhymes</h2>
+				  <p> Children will enjoy hours of listening and watching favourite nursery rhymes come to life. After you listen to the rhymes, you can be ...</p>
 				  </a>
 				  </li>
 				  
 				  <li><a href = "#video">
-				  <img src = "https://i1.ytimg.com/vi_webp/fU_2jABxBKE/default.webp"/>
-				  <h2>Rhymes1</h2>
-				  <p> ths is the video of rhymes </p>
+				  <img src = "https://i1.ytimg.com/vi/T7cWiyZsErM/mqdefault.jpg"/>
+				  <h2>Nursery Rhymes Vol 1 - Collection of Famous Rhymes</h2>
+				  <p>Nursery Rhymes Vol 1 - Collection of Famous Rhymes. To see the more rhymes,games and kidsvideos go to ..</p>
 				  </a>
 				  </li>
 				  
 				  <li><a href = "#video">
-				  <img src = "https://i1.ytimg.com/vi_webp/fU_2jABxBKE/default.webp"/>
-				  <h2>Rhymes1</h2>
-				  <p> ths is the video of rhymes </p>
+				  <img src = "https://i1.ytimg.com/vi_webp/P1H6iODKUsY/mqdefault.webp"/>
+				  <h2>Nursery Rhymes Vol1 - Collection of Twenty Rhymes</h2>
+				  <p> Children will enjoy hours of listening and watching favourite nursery rhymes come to life. After you listen to the rhymes, you can be ... </p>
 				  </a>
 				  </li>
 				  
 				  <li><a href = "#video">
-				  <img src = "https://i1.ytimg.com/vi_webp/fU_2jABxBKE/default.webp"/>
-				  <h2>Rhymes1</h2>
-				  <p> ths is the video of rhymes </p>
+				  <img src = "https://i1.ytimg.com/vi/o8FzAd2wBT0/mqdefault.jpg"/>
+				  <h2>Nursery Rhymes Collection Vol 1 | 40 Nursery Rhymes For Children</h2>
+				  <p>Nursery Rhymes Collection | 40 Non Stop Nursery Rhymes For Children Here's the most enjoyable rhymes collection from ... </p>
 				  </a>
 				  </li>
 			  </ul>
@@ -166,8 +194,8 @@
 		      <div data-role = "navbar">
 			     <ul>
 				      <li><a href = "#pagetwo" data-transition = "slide" data-icon = "arrow-r" class = "ui-btn-active ui-state-persist">Videos</a></li>
-				    <li><a href = "#browse" data-icon = "search">Browse</a></li>
-				    <li><a href = "#contact" data-icon = "info">contact</a></li>
+				    <li><a href = "#browse" data-transition = "slide" data-icon = "search">Browse</a></li>
+				    <li><a href = "#contact" data-transition = "slide" data-icon = "info">contact</a></li>
 				 </ul>
 			  </div>
 		 
@@ -180,7 +208,7 @@
 	  <!-- contact page s--> 
 	      <div data-role = "page" id = "contact">
 		        <div data-role = "header">
-				       <a href = "#pageone" data-role = "button" data-icon = "home" class = "ui-btn-right">Home</a><h1>Contact us</h1>
+				       <a href = "#pageone" data-role = "button" data-icon = "home" class = "ui-btn-right" data-transition = "slide">Home</a><h1>Contact us</h1>
 				</div>
 				
 				<div data-role = "content">
@@ -200,8 +228,8 @@
 						         <label for = "productCategories">What product categories are you interested in?</label>
 								 <select name = "productCategories[]" id = "productCategories" multiple data-native-menu = "false">
 								          <option value = "">Select..</option>
-										  <option value = "Lamps">Lamps</option>
-										  <option value = "Kitchen Equipment">Kitchen Equipment</option>
+										  <option value = "Lamps">Music</option>
+										  <option value = "Kitchen Equipment">Politics</option>
 								 </select>	 
 						   </div>
 						   
@@ -220,9 +248,9 @@
 				<div data-role = "footer" data-id = "nav" data-position = "fixed">
 				       <div data-role = "navbar">
 					         <ul>
-							      <li><a href = "#pageone" data-icon = "arrow-r">Videos</a></li>
-								  <li><a href = "#browse" data-icon = "home">Browse</a></li>
-								  <li><a href = "#contact" class = "ui-btn-active ui-state-persist" data-icon = "info">contact</a></li>
+							      <li><a href = "#pagetwo" data-transition = "slide" data-icon = "arrow-r">Videos</a></li>
+								  <li><a href = "#browse" data-transition = "slide" data-icon = "home">Browse</a></li>
+								  <li><a href = "#contact" data-transition = "slide" class = "ui-btn-active ui-state-persist" data-icon = "info">contact</a></li>
 							 </ul>
 							 
 							 
@@ -237,31 +265,103 @@
 	   <!-- browse page s--> 
 	  <div data-role = "page" id = "browse">
 				<div data-role = "header">
-				   <a href = "#pageone" data-role = "button" data-icon = "home" class= "ui-btn-right">Home</a> <h1>Browse</h1>
+				   <a href = "#pageone" data-role = "button" data-icon = "home" class= "ui-btn-right" data-transition = "slide">Home</a> <h1>Browse</h1>
 				</div>
 				
 				<div data-role = "content">
 				   <ul data-role = "listview" data-filter = "true" data-filter-placeholder = "search video by name...">
-						 <li>    <a href = "#video">
-								  <img src = "https://i1.ytimg.com/vi_webp/fU_2jABxBKE/default.webp"/>
-								  <h2>Rhymes1</h2>
-								  <p> ths is the video of rhymes </p>
-								  </a>
-						 </li>
-						 
-						 <li>    <a href = "#video">
-								  <img src = "https://i1.ytimg.com/vi_webp/fU_2jABxBKE/default.webp"/>
-								  <h2>Rhymes1</h2>
-								  <p> ths is the video of rhymes </p>
-								  </a>
-						 </li>
-						 
-						 <li>    <a href = "#video">
-								  <img src = "https://i1.ytimg.com/vi_webp/fU_2jABxBKE/default.webp"/>
-								  <h2>Rhymes1</h2>
-								  <p> ths is the video of rhymes </p>
-								  </a>
-						 </li>
+						 <li> <a href = "#video">
+					       <img src = "https://i1.ytimg.com/vi_webp/fU_2jABxBKE/default.webp" alt = "">
+					       <h2>Tutorials for English learning</h2>
+						   <span class = "ui-li-count" style = "color:red;">New</span>
+						   <p> This is the E-tutorial for learning English</p>
+						   </a>
+					  </li>
+					  
+					   <li> 
+					       <a href = "#video">
+					       <img src = "https://i1.ytimg.com/vi/tU3lRm5W3oQ/mqdefault.jpg" alt = "">
+					       <h2>Learn English easy</h2>
+						   <p> beginners can learn English here easily</p>
+						   </a>
+					  </li>
+					  
+					   <li> 
+					       <a href = "#video">
+					       <img src = "https://i1.ytimg.com/vi/YMSrnc4qiXA/mqdefault.jpg" alt = "">
+					       <h2>Easy English in 30days</h2>
+						   <p> English can be learned at a moment</p>
+						   </a>
+					  </li>
+					  <li><a href = "#video">
+				  <img src = "https://i1.ytimg.com/vi/UiGzihK84XA/mqdefault.jpg"/>
+				  <h2>News in Zee channel</h2>
+				  <p>This is the popular news published in Zee news </p>
+				  </a>
+				  </li>
+				  
+				  <li><a href = "#video">
+				  <img src = "https://i1.ytimg.com/vi_webp/fU_2jABxBKE/default.webp"/>
+				  <h2>Popular in News</h2>
+				  <p> This is the popular news published in channels</p>
+				  </a>
+				  </li>
+				  
+				  <li><a href = "#video">
+				  <img src = "https://i1.ytimg.com/vi/odSkvaqWJOo/mqdefault.jpg"/>
+				  <h2>This is the news of foriegn</h2>
+				  <p> Foreign channel broadcasted the news </p>
+				  </a>
+				  </li>
+				  
+				  <li><a href = "#video">
+				  <img src = "https://i1.ytimg.com/vi_webp/fU_2jABxBKE/default.webp"/>
+				  <h2>News in Zee channel</h2>
+				  <p> This is the popular news published in Zee news  </p>
+				  </a>
+				  </li>
+				  
+				  <li><a href = "#video">
+				  <img src = "https://i1.ytimg.com/vi_webp/PKKNaY9NtcU/mqdefault.webp"/>
+				  <h2>Popular in News</h2>
+				  <p> This is the popular news published in channels </p>
+				  </a>
+				  </li>
+				 
+			      <li><a href = "#video">
+				  <img src = "https://i1.ytimg.com/vi_webp/md8y86xtmP4/mqdefault.webp"/>
+				  <h2>Nursery Rhymes Vol 2 - Collection of Twenty Rhymes</h2>
+				  <p> Children will enjoy hours of listening and watching favourite nursery rhymes come to life. After you listen to the rhymes, you can be ... </p>
+				  </a>
+				  </li>
+				  
+				  <li><a href = "#video">
+				  <img src = "https://i1.ytimg.com/vi_webp/zBcK8XYEfTc/mqdefault.webp"/>
+				  <h2>Nursery Rhymes Vol 3 - Collection of Thirty Rhymes</h2>
+				  <p> Children will enjoy hours of listening and watching favourite nursery rhymes come to life. After you listen to the rhymes, you can be ...</p>
+				  </a>
+				  </li>
+				  
+				  <li><a href = "#video">
+				  <img src = "https://i1.ytimg.com/vi/T7cWiyZsErM/mqdefault.jpg"/>
+				  <h2>Nursery Rhymes Vol 1 - Collection of Famous Rhymes</h2>
+				  <p>Nursery Rhymes Vol 1 - Collection of Famous Rhymes. To see the more rhymes,games and kidsvideos go to ..</p>
+				  </a>
+				  </li>
+				  
+				  <li><a href = "#video">
+				  <img src = "https://i1.ytimg.com/vi_webp/P1H6iODKUsY/mqdefault.webp"/>
+				  <h2>Nursery Rhymes Vol1 - Collection of Twenty Rhymes</h2>
+				  <p> Children will enjoy hours of listening and watching favourite nursery rhymes come to life. After you listen to the rhymes, you can be ... </p>
+				  </a>
+				  </li>
+				  
+				  <li><a href = "#video">
+				  <img src = "https://i1.ytimg.com/vi/o8FzAd2wBT0/mqdefault.jpg"/>
+				  <h2>Nursery Rhymes Collection Vol 1 | 40 Nursery Rhymes For Children</h2>
+				  <p>Nursery Rhymes Collection | 40 Non Stop Nursery Rhymes For Children Here's the most enjoyable rhymes collection from ... </p>
+				  </a>
+				  </li>
 				   </ul>
 				</div>
 				
@@ -269,8 +369,8 @@
 					  <div data-role = "navbar">
 						 <ul>
 							 <li><a href = "#pagetwo" data-transition = "slide" data-icon = "arrow-r" >Videos</a></li>
-							<li><a href = "#browse" data-icon = "search" class = "ui-btn-active ui-state-persist">Browse</a></li>
-							<li><a href = "#contact" data-icon = "info">contact</a></li>
+							<li><a href = "#browse" data-transition = "slide" data-icon = "search" class = "ui-btn-active ui-state-persist">Browse</a></li>
+							<li><a href = "#contact" data-transition = "slide" data-icon = "info">contact</a></li>
 						 </ul>
 					  </div>
 		 
@@ -285,9 +385,11 @@
  
  	 
 	 <!----- video sub page s ----->
+	 
+	 <!-- english s-->
 	 <div data-role = "page" id = "video">
 	    <div data-role = "header">
-		   <a href = "#pageone" data-role = "button" data-icon = "home" class = "ui-btn-right">Home</a> <h1>rhymes</h1>
+		   <a href = "#pageone" data-role = "button" data-icon = "home" class = "ui-btn-right" data-transition = "slide">Home</a> <h1>rhymes</h1>
 		</div>
 		
 		<div data-role = "content">
@@ -297,14 +399,23 @@ src="https://www.youtube.com/embed/M7lc1UVf-VE"
 frameborder="0" allowfullscreen>
 			  </iframe>
 		   </div>
+		   <p>
+		      <h5>Published on 27 Jan 2014</h5>
+Nursery Rhymes Collection | 40 Non Stop Nursery Rhymes For Children
+Here's the most enjoyable rhymes collection from Videogyan.
+"Children Love to Sing and dance for these rhymes and education 
+		   
+		   
+		   
+		   </p>
 		</div>
 		
 		<div data-position = "fixed" data-role = "footer">
 		      <div data-role = "navbar">
 			     <ul>
 				     <li><a href = "#pagetwo" data-transition = "slide" data-icon = "arrow-r" class = "ui-btn-active ui-state-persist">Videos</a></li>
-				    <li><a href = "#browse" data-icon = "search">Browse</a></li>
-				    <li><a href = "#contact" data-icon = "info">contact</a></li>
+				    <li><a href = "#browse" data-transition = "slide" data-icon = "search">Browse</a></li>
+				    <li><a href = "#contact" data-transition = "slide" data-icon = "info">contact</a></li>
 				 </ul>
 			  </div>
 		 
